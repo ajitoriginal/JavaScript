@@ -49,4 +49,42 @@ Scope:
     determines the accessibility or visibility of variables
     Block scope, Function scope, Global scope
 
+Closure:
+    A closure is the combination of a function bundled together with references to its surrounding state.
+    Closures are created every time a function is created, at function creation time.
+    In JavaScript, when we return a function from another function, we are effectively returning a combination of the
+    function definition along with the function's scope. This would let the function definition have an associated
+    persistent memory which could hold on to live data between executions. That combination of the function and its
+    scope chain is what is called a closure in JavaScript.
+
+Function Currying:
+    Currying is a process in functional programming in which we transform a function with multiple
+    arguments into a sequence of nesting functions that take one argument at a time.
+    function f(a,b,c) is transformed to f(a)(b)(c)
+
+this:
+    The JavaScript this keyword which is used in a function, refers to the object it belongs to
+    It makes functions reusable by letting you decide the object value
+    this value is determined entirely by how a function is called
+    How to determine this?
+        Implicit binding
+        Explicit binding
+        New binding
+        Default binding
+    Order of precedence
+        New binding
+        Explicit binding
+        Implicit binding
+        Default binding
+
+Itrables and Iterators:
+    An object which implements the iterable protocol is called iterable
+    For an object to be an iterable it must implement a method at the key [Symbol.iterator]
+    That method should not accept any argument and should return an object which
+    conforms to the iterator protocol
+    The iterator protocol decides whether an object is an iterator
+    The object must have a next() method that returns an object with two properties
+    value: which gives the current element
+    done: which is a boolean value indicating whether or not there are any more elements that could be iterated upon
+
 */
